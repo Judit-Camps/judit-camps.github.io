@@ -1,0 +1,265 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/background2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: #70b0b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    height: 45px;
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    transition: .5s;
+}
+
+header .home-logo {
+    padding: 1.5rem;
+}
+
+header nav {
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+header nav a {
+    padding-left: 10px;
+    color: aliceblue;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: black;
+}
+
+/* header {
+    background-color: gainsboro;
+    position: fixed;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 4px 0 gray;
+} */
+
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/* Title section */
+#title {
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+#title h1 {
+    font-size: 5rem;
+    padding-bottom: 20px;
+}
+
+.index {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.index a {
+    color: grey;
+    font-size: large;
+}
+
+.index a:hover {
+    color: black;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #70b0b6;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* About me section */
+#about {
+    text-align: center;
+    padding: 2%;
+    background-color: white;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.description {
+    text-align: justify;
+}
+
+.profile-pic {
+    width: 35%;
+}
+
+.link-buttons {
+    padding: 2rem;
+}
+
+.link-buttons a {
+    color: black;
+}
+
+
+
+/* Highlight section */
+#highlights-sec {
+    z-index: 1;
+    background-color: white;
+    /* box-shadow: 0 0 4px 0 gray; */
+    padding: 2%;
+}
+
+#highlights h1 {
+    text-align: center;
+}
+
+.timeline-items {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+}
+
+.sub {
+    font-size: smaller;
+    margin-bottom: 2px;
+}
+
+.l {
+    font-weight: 400;
+}
+
+.cv {
+    text-align: center;
+}
+
+
+
+/* Footer section */
+#footer {
+    min-height: 50px;
+    width: 25%;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+#footer i {
+    font-size: 1.5rem;
+}
+
+.foot-link {
+    padding: 1rem;
+}
+
+.foot-link i:hover {
+    color: rgb(45, 45, 45);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+i {
+    color: black;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.copyright {
+    font-size: x-small;
+}
+
+
+.show {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+@media (max-width: 1028px) {
+    body {
+        background-repeat: no-repeat;
+    }
+
+    header {
+        height: 60px;
+    }
+    header a{
+        size: 1.5rem;
+    }
+
+    #about {
+        margin: 5rem;
+    }
+
+    #title h1 {
+        font-size: 4rem;
+    }
+
+    .profile-pic {
+        margin-top: 1rem;
+    }
+
+    #footer {
+        width: 35%;
+    }
+
+}
