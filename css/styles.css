@@ -232,7 +232,8 @@ i {
 @media (max-width: 1028px) {
     body {
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 250%;
+        background-attachment: fixed;
     }
 
     header {
