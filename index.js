@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
     if (scrollTop == 0) {
         nav.style.transform = "translateY(0)";
     } else if (scrollTop > lastScrollPos) {
-        nav.style.transition = "all .4s ease";
+        nav.style.transition = "all .5s ease";
         nav.style.transform = "translateY(-100%)";
     } else {
         nav.style.transition = "all .6s ease";

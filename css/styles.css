@@ -7,7 +7,7 @@ body {
     background-image: url("../images/background2.png");
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
 }
 
 header {
@@ -42,22 +42,16 @@ header nav a.active {
     color: black;
 }
 
-/* header {
-    background-color: gainsboro;
-    position: fixed;
-    display: flex;
-    height: 40px;
-    width: 100%;
-    z-index: 2;
-    box-shadow: 0 0 4px 0 gray;
-} */
-
 
 section {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
+}
+
+.subtitle {
+    text-align: center;
 }
 
 /* Title section */
@@ -69,11 +63,12 @@ section {
 }
 
 #title h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     padding-bottom: 20px;
 }
 
 .index {
+    list-style: none;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -81,7 +76,7 @@ section {
 
 .index a {
     color: grey;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 .index a:hover {
@@ -119,7 +114,7 @@ section {
     padding: 2%;
     background-color: white;
     border-radius: 25px;
-    margin: auto;
+    margin: 5vw;
 }
 
 .description {
@@ -154,7 +149,7 @@ section {
 
 .timeline-items {
     max-width: 1000px;
-    margin: auto;
+    margin: 2vw;
 }
 
 .timeline-item {
@@ -237,14 +232,28 @@ i {
 @media (max-width: 1028px) {
     body {
         background-repeat: no-repeat;
-        background-size: cover;
     }
 
     header {
         height: 60px;
     }
-    header a{
+
+    header a {
         size: 1.5rem;
+    }
+
+    .index {
+        text-align: center;
+        display: block;
+        margin-left: -40px;
+    }
+
+    .index li {
+        padding-bottom: 15px;
+        font-size: 3vw;
+    }
+    .index li a{
+        font-size: 3vw;
     }
 
     #about {
@@ -252,7 +261,8 @@ i {
     }
 
     #title h1 {
-        font-size: 4rem;
+        text-align: center;
+        font-size: 10vw;
     }
 
     .profile-pic {
