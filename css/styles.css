@@ -229,7 +229,7 @@ i {
 @media (max-width: 1028px) {
     body {
         background-repeat: no-repeat;
-        background-size: 250%;
+        background-size: cover;
         background-attachment: fixed;
     }
 
