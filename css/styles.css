@@ -232,8 +232,12 @@ i {
         background-attachment: fixed;
     }
 
+    .sec-title {
+        font-size: 24px;
+    }
+
     header {
-        height: 60px;
+        height: 80px;
     }
 
     header i {
@@ -275,6 +279,13 @@ i {
 
     #footer {
         width: 35%;
+    }
+
+    #footer p {
+        font-size: 24px;
+    }
+    .copyright {
+        font-size: medium;
     }
 
 }
