@@ -132,13 +132,10 @@ section {
     color: black;
 }
 
-
-
 /* Highlight section */
 #highlights-sec {
     z-index: 1;
     background-color: white;
-    /* box-shadow: 0 0 4px 0 gray; */
     padding: 2%;
 }
 
@@ -258,7 +255,8 @@ i {
         padding-bottom: 15px;
         font-size: 3vw;
     }
-    .index li a{
+
+    .index li a {
         font-size: 3vw;
     }
 
