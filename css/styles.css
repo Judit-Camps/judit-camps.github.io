@@ -75,7 +75,7 @@ section {
 }
 
 .index a {
-    color: grey;
+    color: rgb(86, 86, 86);
     font-size: 1.5rem;
 }
 
@@ -232,6 +232,7 @@ i {
 @media (max-width: 1028px) {
     body {
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     header {
