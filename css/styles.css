@@ -42,7 +42,6 @@ header nav a.active {
     color: black;
 }
 
-
 section {
     display: grid;
     place-items: center;
@@ -240,8 +239,13 @@ i {
         height: 60px;
     }
 
+    header i {
+        font-size: larger;
+    }
+
     header a {
         size: 1.5rem;
+        font-size: larger;
     }
 
     .index {
