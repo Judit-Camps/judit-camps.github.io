@@ -150,6 +150,7 @@ section {
 
 .timeline-item {
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 .sub {
@@ -265,7 +266,10 @@ i {
     }
 
     #about {
-        margin: 5rem;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin: 2.5rem;
     }
 
     #title h1 {
